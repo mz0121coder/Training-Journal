@@ -25,3 +25,11 @@ app.get("/exercise", (req, res) => {
 app.get("/stats", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/stats.html"));
 });
+
+// Routes to read exercises for last 7 days
+app.get("/api/workouts", async (req, res) => {
+  const workouts = await db.Workout.aggregate([
+    { $addFields: { totalDuration: { $sum: "$exercises.duration" } } },
+  ]);
+  res.json(workouts);
+});
