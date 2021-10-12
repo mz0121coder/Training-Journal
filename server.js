@@ -16,3 +16,12 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/wt-1", {
   useCreateIndex: true,
   userFindAndModify: false,
 });
+
+// html routes
+app.get("/exercise", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/exercise.html"));
+});
+
+app.get("/stats", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/stats.html"));
+});
