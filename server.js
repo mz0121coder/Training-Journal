@@ -33,3 +33,16 @@ app.get("/api/workouts", async (req, res) => {
   ]);
   res.json(workouts);
 });
+
+// Routes to add & update exercises
+app.post("/api/workouts", async (req, res) => {
+  db.Workout.create(req.body).then((newWorkout) => res.json(newWorkout));
+});
+
+app.put("/api/workouts/:id", async (req, res) => {
+  db.Workout.findOneAndUpdate(
+    { _id: req.params.id },
+    { $push: { exercises: req.body } },
+    { new: true }
+  ).then((updatedList) => res.json(updatedList));
+});
