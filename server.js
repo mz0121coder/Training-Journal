@@ -46,3 +46,8 @@ app.put("/api/workouts/:id", async (req, res) => {
     { new: true }
   ).then((updatedList) => res.json(updatedList));
 });
+
+// Listen on port
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+});
