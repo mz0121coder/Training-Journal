@@ -34,6 +34,8 @@ The user should be able to:
 
 ## Live URL
 
+https://training-journal-mz.herokuapp.com/
+
 ## Credits
 
 [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/)  
@@ -42,4 +44,16 @@ The user should be able to:
  [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)  
  [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
 
+## Demo
+
+![Training-journal-demo](./demo/Training-journal-demo.gif)
+
 ## Screenshots
+
+![screenshot-1](./demo/screenshot-1.png)
+
+![screenshot-2](./demo/screenshot-2.png)
+
+![screenshot-3](./demo/screenshot-3.png)
+
+![screenshot-4](./demo/screenshot-4.png)
