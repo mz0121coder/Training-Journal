@@ -40,9 +40,7 @@ https://training-journal-mz.herokuapp.com/
 
 [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/)  
  [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/)  
- [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate)  
- [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)  
- [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
+ [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate)
 
 ## Demo
 
